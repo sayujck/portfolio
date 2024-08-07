@@ -1,0 +1,239 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+.logo {
+    width: 150px;
+}
+ul {
+    margin-right: 50px;
+}
+.listItem {
+    list-style-type: none;
+    display: inline;
+    margin: 0 20px;   
+}
+.links {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.links:hover {
+    color: darkred;
+    text-decoration: underline;
+}
+.homeContent {
+    margin: 10% 0px 0px 8%;
+}
+#uname {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Playwrite AR", cursive;
+}
+#lname {
+    color: orange;
+    font-family: "Playwrite AR", cursive;
+}
+#userDetails {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.2;
+    font-family: monospace;
+}
+#download {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.homeImages {
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.group1 {
+    position: absolute;
+    height: 80%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1.5s, left 1.5s;
+}
+.homeImages:hover #bg {
+    bottom: 70px;
+}
+.homeImages:hover #bg2 {
+    bottom: 70px;
+}
+.homeImages:hover #avatar {
+    left: 40%;
+}
+#about {
+    margin: 15% 8% 0px 8%;
+}
+.sectionHead {
+    text-align: center;
+}
+.mainHead {
+    font-size: 30px;
+}
+.subHead {
+    font-size: 20px;
+    color: green;
+}
+.aboutBody {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+}
+.img1 {
+    width: 90%;
+}
+.aboutContent {
+    font-size: 20px;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}   
+.informations {
+    margin-top: 1.3rem;
+}
+.info-box {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.info-box>span {
+    margin-left: 1rem;
+}
+#skill {
+    margin: 8% 8% 0px 8%;
+}
+.skillContent {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+.bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.barHead,.barPercent {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.baseBar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlBar {
+    background-color: orange;
+    width: 90%;
+}
+.cssBar {
+    background-color: orange;
+    width: 80%;
+}
+.jsBar {
+    background-color: orange;
+    width: 90%;
+}
+.reactBar {
+    background-color: orange;
+    width: 85%;
+}
+.mySkill {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+#contact {
+    margin: 5% 8% 0px 8%;
+}
+.iconCollections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.brands {
+    color: black;
+    font-size: 2rem;
+}
+.icon:hover {
+    background-image: linear-gradient(to bottom right,green,rgb(0, 255, 217));
+}
+.icon:hover .brands{
+    color: white;
+    /* Animation */
+    animation: rotate 2s;
+}
+@keyframes rotate {
+    0%{transform: rotate(-20deg);}
+    25%{transform: rotate(20deg);}
+    50%{transform: rotate(-20deg);}
+    100%{transform: rotate(20deg);}
+}
+footer {
+    margin-top: 8%;
+}
+#copyright {
+    text-align: center;
+    font-weight: 600;
+}
+.upArrow {
+    float: right;
+    margin: -40px 20px 20px 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: azure;
+}
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 10px;
+}
